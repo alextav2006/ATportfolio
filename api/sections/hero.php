@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="portrait-wrap" aria-label="Retrato de Alexandre Taveira">
-        <div class="portrait-frame"><img src="/avatar-v1.jpg" width="320" height="320" alt="Avatar de Alexandre Taveira" loading="eager" fetchpriority="high" decoding="async"></div>
+        <div class="portrait-frame"><img src="../avatar-v1.jpg" width="320" height="320" alt="Avatar de Alexandre Taveira" loading="eager" fetchpriority="high" decoding="async"></div>
         <div class="portrait-accent" aria-hidden="true"></div>
         <span class="portrait-label mono">Do conceito à produção.</span>
     </div>

@@ -274,6 +274,9 @@ $projects = require __DIR__ . '/data/projects.php';
         .footer-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 12px 24px; }
         .footer-links a { padding-bottom: 5px; border-bottom: 1px solid #e7c66d55; color: #e7c66d; font-family: var(--mono); font-size: 12px; font-weight: 500; text-decoration: none; }
         .footer-links a:hover { border-color: #72e8d2; color: #72e8d2; }
+        .footer-links .footer-social { display: inline-flex; width: 24px; height: 24px; align-items: center; justify-content: center; padding: 0; border: 0; }
+        .footer-social img, .footer-social svg { display: block; width: 20px; height: 20px; }
+        .footer-social:hover { opacity: .75; }
 
         @keyframes arrive { from { opacity: 0; transform: translateY(11px); } to { opacity: 1; transform: translateY(0); } }
         @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

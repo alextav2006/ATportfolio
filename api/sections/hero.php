@@ -1,6 +1,6 @@
 <section class="shell hero" id="inicio">
     <div>
-        <div class="eyebrow mono"><span class="status-dot" aria-hidden="true"></span> Programador · Portugal</div>
+        <div class="eyebrow mono"><span class="status-dot" aria-hidden="true"></span> Programador Backend Júnior · Portugal</div>
         <h1>Olá, sou o<br><span>Alexandre Taveira.</span></h1>
         <p class="hero-copy">Desenvolvo software com lógica, clareza e atenção ao detalhe. Gosto de explorar sistemas backend, criar jogos e dar forma a experiências web úteis.</p>
         <div class="hero-actions">

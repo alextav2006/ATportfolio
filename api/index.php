@@ -62,15 +62,15 @@ $projects = require __DIR__ . '/data/projects.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfólio de Alexandre Taveira: desenvolvimento backend, jogos, web e sistemas de dados.">
+    <meta name="description" content="Portfólio de Alexandre Taveira, programador backend júnior em Portugal, com projetos de software, automação e desenvolvimento web.">
     <link rel="canonical" href="https://www.alexandretaveira.pt/">
     <link rel="ard" href="https://www.alexandretaveira.pt/.well-known/ard.json">
     <meta name="theme-color" content="#f5f7f2">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="pt_PT">
         <meta property="og:site_name" content="Alexandre Taveira">
-        <meta property="og:title" content="Alexandre Taveira | Programador">
-        <meta property="og:description" content="Portfólio de Alexandre Taveira, programador em Portugal com foco em backend, jogos, web e sistemas de dados.">
+        <meta property="og:title" content="Alexandre Taveira | Programador Backend Júnior">
+        <meta property="og:description" content="Portfólio de Alexandre Taveira, programador backend júnior em Portugal, com projetos de software, automação e desenvolvimento web.">
         <meta property="og:url" content="https://www.alexandretaveira.pt/">
         <script type="application/ld+json">
         {
@@ -82,8 +82,8 @@ $projects = require __DIR__ . '/data/projects.php';
                     "name": "Alexandre Taveira",
                     "url": "https://www.alexandretaveira.pt/",
                     "image": "https://avatars.githubusercontent.com/u/184930787?v=4&size=320",
-                    "jobTitle": "Programador",
-                    "description": "Programador em Portugal com interesse em backend, desenvolvimento de jogos, web e sistemas de dados.",
+                    "jobTitle": "Programador Backend Júnior",
+                    "description": "Programador backend júnior em Portugal, com interesse em software, automação e desenvolvimento web.",
                     "sameAs": [
                         "https://github.com/alextav2006",
                         "https://www.linkedin.com/in/alexandretaveira2006/"
@@ -107,7 +107,7 @@ $projects = require __DIR__ . '/data/projects.php';
         }
         </script>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23174a39'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='27' font-weight='700' fill='%23d9fa72'%3EAT%3C/text%3E%3C/svg%3E">
-    <title>Alexandre Taveira | Programador</title>
+    <title>Alexandre Taveira | Programador Backend Júnior</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">

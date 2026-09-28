@@ -1,10 +1,30 @@
-<?php $projects = require __DIR__ . '/data/projects.php'; ?>
+<?php
+$resource = $_GET['resource'] ?? '';
+
+if ($resource === 'robots') {
+    header('Content-Type: text/plain; charset=utf-8');
+    header('Cache-Control: public, max-age=3600, s-maxage=86400');
+    echo "User-agent: *\nAllow: /\nSitemap: https://www.alexandretaveira.pt/sitemap.xml\n";
+    exit;
+}
+
+if ($resource === 'sitemap') {
+    header('Content-Type: application/xml; charset=utf-8');
+    header('Cache-Control: public, max-age=3600, s-maxage=86400');
+    echo '<?xml version="1.0" encoding="UTF-8"?>';
+    echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://www.alexandretaveira.pt/</loc></url></urlset>';
+    exit;
+}
+
+$projects = require __DIR__ . '/data/projects.php';
+?>
 <!doctype html>
 <html lang="pt-PT">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfólio de Alexandre Taveira: desenvolvimento backend, jogos, web e sistemas de dados.">
+    <link rel="canonical" href="https://www.alexandretaveira.pt/">
     <meta name="theme-color" content="#f5f7f2">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23174a39'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='27' font-weight='700' fill='%23d9fa72'%3EAT%3C/text%3E%3C/svg%3E">
     <title>Alexandre Taveira | Programador</title>

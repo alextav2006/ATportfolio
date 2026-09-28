@@ -23,7 +23,7 @@
     },
     {
       "src": "^/\\.well-known/ai-catalog\\.json$",
-      "dest": "/api/index.php?resource=ard"
+      "dest": "/api/index.php?resource=legacy-ard"
     },
     {
       "handle": "filesystem"

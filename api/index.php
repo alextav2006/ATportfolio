@@ -48,6 +48,13 @@ if ($resource === 'ard') {
     exit;
 }
 
+if ($resource === 'legacy-ard') {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: public, max-age=3600, s-maxage=86400');
+    echo '{"specVersion":"1.0","entries":[]}';
+    exit;
+}
+
 $projects = require __DIR__ . '/data/projects.php';
 ?>
 <!doctype html>

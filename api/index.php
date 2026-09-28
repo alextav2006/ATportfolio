@@ -4,7 +4,7 @@ $resource = $_GET['resource'] ?? '';
 if ($resource === 'robots') {
     header('Content-Type: text/plain; charset=utf-8');
     header('Cache-Control: public, max-age=3600, s-maxage=86400');
-    echo "User-agent: *\nAllow: /\nSitemap: https://www.alexandretaveira.pt/sitemap.xml\n";
+    echo "User-agent: *\nAllow: /\nSitemap: https://www.alexandretaveira.pt/sitemap.xml\nAgentmap: https://www.alexandretaveira.pt/.well-known/ard.json\n";
     exit;
 }
 
@@ -13,6 +13,38 @@ if ($resource === 'sitemap') {
     header('Cache-Control: public, max-age=3600, s-maxage=86400');
     echo '<?xml version="1.0" encoding="UTF-8"?>';
     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://www.alexandretaveira.pt/</loc></url></urlset>';
+    exit;
+}
+
+if ($resource === 'llms') {
+    header('Content-Type: text/plain; charset=utf-8');
+    header('Cache-Control: public, max-age=3600, s-maxage=86400');
+    echo <<<'LLMS'
+# Alexandre Taveira
+
+> Portfólio de Alexandre Taveira, programador em Portugal, com projetos de backend, jogos, web e sistemas de dados.
+
+## Projetos
+
+- [ChessMate](https://github.com/alextav2006/chessmate): jogo de xadrez desenvolvido com Godot e GDScript.
+- [Slack Calendar Bot](https://github.com/alextav2006/slack-llm-bot): automação n8n para agendar eventos no Google Calendar através do Slack.
+- [Projeto de Tecnologias da Internet](https://github.com/alextav2006/projTI_Taveira-Tristao): website interativo sobre xadrez.
+- [Datandroid](https://github.com/alextav2006/datandroid): aplicação web sobre planeamento de voo e modelos de drones.
+- [Dia do Desporto](https://github.com/alextav2006/dia_do_desporto): website informativo sobre atividades desportivas.
+
+## Contactos
+
+- [LinkedIn](https://www.linkedin.com/in/alexandretaveira2006/)
+- [GitHub](https://github.com/alextav2006)
+- [Email](mailto:contacto@alexandretaveira.pt)
+LLMS;
+    exit;
+}
+
+if ($resource === 'ard') {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: public, max-age=3600, s-maxage=86400');
+    echo '{"entries":[]}';
     exit;
 }
 
@@ -25,6 +57,7 @@ $projects = require __DIR__ . '/data/projects.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfólio de Alexandre Taveira: desenvolvimento backend, jogos, web e sistemas de dados.">
     <link rel="canonical" href="https://www.alexandretaveira.pt/">
+    <link rel="ard" href="https://www.alexandretaveira.pt/.well-known/ard.json">
     <meta name="theme-color" content="#f5f7f2">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="pt_PT">

@@ -14,6 +14,18 @@
       "dest": "/api/index.php?resource=sitemap"
     },
     {
+      "src": "^/llms\\.txt$",
+      "dest": "/api/index.php?resource=llms"
+    },
+    {
+      "src": "^/\\.well-known/ard\\.json$",
+      "dest": "/api/index.php?resource=ard"
+    },
+    {
+      "src": "^/\\.well-known/ai-catalog\\.json$",
+      "dest": "/api/index.php?resource=ard"
+    },
+    {
       "handle": "filesystem"
     },
     {

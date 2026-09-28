@@ -1,3 +1,14 @@
+<?php
+$technologyIcons = [
+    'Godot' => 'https://cdn.simpleicons.org/godotengine/478CBF',
+    'n8n' => 'https://cdn.simpleicons.org/n8n/EA4B71',
+    'OpenAI' => 'https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/openai.svg',
+    'Google Calendar' => 'https://cdn.simpleicons.org/googlecalendar/4285F4',
+    'JavaScript' => 'https://cdn.simpleicons.org/javascript/323330',
+    'HTML' => 'https://cdn.simpleicons.org/html5/E34F26',
+    'CSS' => 'https://cdn.simpleicons.org/css/1572B6',
+];
+?>
 <section class="shell" id="projetos">
     <div class="section-head">
         <div>
@@ -19,7 +30,14 @@
                 <div class="project-bottom">
                     <div class="tags">
                         <?php foreach ($project['stack'] as $technology): ?>
-                            <span class="tag"><?= htmlspecialchars($technology, ENT_QUOTES, 'UTF-8') ?></span>
+                            <?php $icon = $technologyIcons[$technology] ?? null; ?>
+                            <span class="tag<?= $icon === null ? ' tag-text' : '' ?>" title="<?= htmlspecialchars($technology, ENT_QUOTES, 'UTF-8') ?>">
+                                <?php if ($icon !== null): ?>
+                                    <img src="<?= htmlspecialchars($icon, ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($technology, ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async">
+                                <?php else: ?>
+                                    <span><?= htmlspecialchars($technology, ENT_QUOTES, 'UTF-8') ?></span>
+                                <?php endif; ?>
+                            </span>
                         <?php endforeach; ?>
                     </div>
                     <div class="project-links">

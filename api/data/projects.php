@@ -4,7 +4,7 @@ return [
         'name' => 'ChessMate',
         'type' => 'Desenvolvimento de jogos',
         'description' => 'Jogo de xadrez em GDScript e Godot, com validação de movimentos legais, promoção de peões e uma interface pixel art.',
-        'stack' => ['Godot', 'GDScript'],
+        'stack' => ['Godot'],
         'url' => 'https://github.com/alextav2006/chessmate',
         'number' => '01',
         'style' => 'chess',

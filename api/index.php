@@ -22,15 +22,14 @@ if ($resource === 'llms') {
     echo <<<'LLMS'
 # Alexandre Taveira
 
-> Portfólio de Alexandre Taveira, programador em Portugal, com projetos de backend, jogos, web e sistemas de dados.
+> Portfólio de Alexandre Taveira, programador backend júnior em Portugal, com projetos de desenvolvimento web.
 
 ## Projetos
 
-- [ChessMate](https://github.com/alextav2006/chessmate): jogo de xadrez desenvolvido com Godot e GDScript.
-- [Slack Calendar Bot](https://github.com/alextav2006/slack-llm-bot): automação n8n para agendar eventos no Google Calendar através do Slack.
-- [Projeto de Tecnologias da Internet](https://github.com/alextav2006/projTI_Taveira-Tristao): website interativo sobre xadrez.
-- [Datandroid](https://github.com/alextav2006/datandroid): aplicação web sobre planeamento de voo e modelos de drones.
-- [Dia do Desporto](https://github.com/alextav2006/dia_do_desporto): website informativo sobre atividades desportivas.
+- [Invictus](https://invictusbarber.pt/): website de barbearia com agendamento online, serviços, produtos e galeria.
+- [Shah](https://alextav2006.github.io/projTI_Taveira-Tristao/): website interativo sobre xadrez, com conteúdos e tabuleiro digital.
+- [Portfólio](https://leonorcarvalho.pt/): portfólio artístico de Leonor Carvalho, com percurso de formação em representação e projetos de interpretação.
+- [Dia do Desporto](https://github.com/alextav2006/dia_do_desporto): website sobre o Dia do Desporto Escolar, atividades, recomendações e contactos.
 
 ## Contactos
 
@@ -238,9 +237,8 @@ $projects = require __DIR__ . '/data/projects.php';
         .project-art { position: relative; display: flex; height: 166px; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 19px; border-radius: 3px; }
         .project-art::after { position: absolute; inset: 0; content: ""; opacity: .25; background-image: linear-gradient(135deg, transparent 48%, #14251f 49%, transparent 50%); background-size: 19px 19px; }
         .project-art.chess { background: var(--lime); }
-        .project-art.calendar { background: #d9e8dc; }
         .project-art.web { background: var(--coral); }
-        .project-art.data { background: var(--blue); }
+        .project-art.portfolio { background: var(--blue); }
         .project-art.sport { background: #f1c875; }
         .art-mark { z-index: 1; display: grid; width: 76px; height: 76px; place-items: center; border: 1px solid #14251f50; border-radius: 50%; font-size: 33px; font-weight: 500; }
         .art-caption { position: absolute; z-index: 1; right: 13px; bottom: 11px; }

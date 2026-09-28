@@ -1,9 +1,5 @@
 <?php
 $technologyIcons = [
-    'Godot' => 'https://cdn.simpleicons.org/godotengine/478CBF',
-    'n8n' => 'https://cdn.simpleicons.org/n8n/EA4B71',
-    'OpenAI' => 'https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/openai.svg',
-    'Google Calendar' => 'https://cdn.simpleicons.org/googlecalendar/4285F4',
     'JavaScript' => 'https://cdn.simpleicons.org/javascript/323330',
     'HTML' => 'https://cdn.simpleicons.org/html5/E34F26',
     'CSS' => 'https://cdn.simpleicons.org/css/1572B6',
@@ -15,7 +11,7 @@ $technologyIcons = [
             <span class="section-index mono">01 / Seleção de trabalho</span>
             <h2>Projetos em destaque</h2>
         </div>
-        <p class="section-note">Uma seleção de experiências em jogos, automação, desenvolvimento web e sistemas de dados.</p>
+        <p class="section-note">Uma seleção de websites e experiências digitais em diferentes áreas.</p>
     </div>
     <div class="project-grid">
         <?php foreach ($projects as $project): ?>
@@ -42,9 +38,11 @@ $technologyIcons = [
                     </div>
                     <div class="project-links">
                         <?php if (isset($project['demo'])): ?>
-                            <a href="<?= htmlspecialchars($project['demo'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">Demo ↗</a>
+                            <a href="<?= htmlspecialchars($project['demo'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">Visitar ↗</a>
                         <?php endif; ?>
-                        <a href="<?= htmlspecialchars($project['url'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                        <?php if (isset($project['url'])): ?>
+                            <a href="<?= htmlspecialchars($project['url'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </article>

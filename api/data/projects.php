@@ -20,8 +20,8 @@ return [
         'style' => 'chess',
     ],
     [
-        'name' => 'Portfólio · Full stack',
-        'type' => 'Website · Portfólio artístico',
+        'name' => 'Portfólio',
+        'type' => 'Website · Portfólio artístico · Full stack',
         'description' => 'Portfólio artístico com percurso de formação em representação e projetos de interpretação.',
         'stack' => ['HTML', 'CSS', 'JavaScript'],
         'url' => 'https://github.com/alextav2006/LCportfolio',
@@ -30,8 +30,8 @@ return [
         'style' => 'portfolio',
     ],
     [
-        'name' => 'Dia do Desporto · Front end',
-        'type' => 'Website · Desporto escolar',
+        'name' => 'Dia do Desporto',
+        'type' => 'Website · Desporto escolar · Front end',
         'description' => 'Website sobre o Dia do Desporto Escolar, com informação sobre atividades, recomendações e contactos.',
         'stack' => ['HTML', 'CSS'],
         'url' => 'https://github.com/alextav2006/dia_do_desporto',

@@ -2,7 +2,7 @@
 return [
     [
         'name' => 'Invictus',
-        'type' => 'Website · Barbearia',
+        'type' => 'Website · Barbearia · Full stack',
         'description' => 'Participação em equipa: Website de barbearia com agendamento online, apresentação de serviços, produtos e galeria.',
         'stack' => ['HTML', 'CSS', 'JavaScript'],
         'demo' => 'https://invictusbarber.pt/',
@@ -11,7 +11,7 @@ return [
     ],
     [
         'name' => 'Shah',
-        'type' => 'Website · Xadrez',
+        'type' => 'Website · Xadrez · Full stack',
         'description' => 'Participação em equipa: Website interativo sobre xadrez, com conteúdos para aprender, conhecer a história e jogar num tabuleiro digital.',
         'stack' => ['JavaScript', 'HTML', 'CSS'],
         'url' => 'https://github.com/alextav2006/projTI_Taveira-Tristao',
@@ -20,7 +20,7 @@ return [
         'style' => 'chess',
     ],
     [
-        'name' => 'Portfólio',
+        'name' => 'Portfólio · Full stack',
         'type' => 'Website · Portfólio artístico',
         'description' => 'Portfólio artístico com percurso de formação em representação e projetos de interpretação.',
         'stack' => ['HTML', 'CSS', 'JavaScript'],
@@ -30,7 +30,7 @@ return [
         'style' => 'portfolio',
     ],
     [
-        'name' => 'Dia do Desporto',
+        'name' => 'Dia do Desporto · Front end',
         'type' => 'Website · Desporto escolar',
         'description' => 'Website sobre o Dia do Desporto Escolar, com informação sobre atividades, recomendações e contactos.',
         'stack' => ['HTML', 'CSS'],

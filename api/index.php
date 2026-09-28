@@ -210,7 +210,7 @@ $projects = require __DIR__ . '/data/projects.php';
         .portrait-accent { position: absolute; right: 0; bottom: 0; width: 82px; height: 82px; background: var(--lime); z-index: -1; }
         .portrait-label { position: absolute; left: -43px; bottom: 24px; padding: 8px 10px; background: #102c31; border: 1px solid #53e3cd60; color: #c7f8e9; transform: rotate(-5deg); }
 
-        #projetos { position: relative; isolation: isolate; }
+        #projetos { position: relative; isolation: isolate; padding-bottom: 58px; }
         #projetos::before {
             position: absolute;
             z-index: -1;
@@ -290,6 +290,7 @@ $projects = require __DIR__ . '/data/projects.php';
             .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
             .portrait-wrap { width: 120px; height: 150px; }
             .portrait-label { left: -23px; bottom: 16px; font-size: 9px; }
+            #projetos { padding-bottom: 46px; }
             .section-head { align-items: flex-start; flex-direction: column; padding-top: 46px; }
             h2 { font-size: 30px; }
             .project-grid { grid-template-columns: 1fr; }

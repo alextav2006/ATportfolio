@@ -41,18 +41,34 @@
         .mono { font-family: var(--mono); font-size: 11px; letter-spacing: 0; text-transform: uppercase; }
 
         .topbar {
+            position: relative;
+            isolation: isolate;
             min-height: 76px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid var(--line);
+            border-bottom: 1px solid #53e3cd;
         }
-        .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; }
+        .topbar::before {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 100vw;
+            content: "";
+            transform: translateX(-50%);
+            background-color: #e3f1e9;
+            background-image: radial-gradient(ellipse at 82% 50%, #53e3cd45, transparent 42%), radial-gradient(#174a3930 .8px, transparent .8px), linear-gradient(105deg, #edf6ef, #d9eee5);
+            background-size: auto, 10px 10px, auto;
+        }
+        .brand { display: flex; align-items: center; gap: 11px; color: var(--ink); font-size: 16px; text-decoration: none; font-weight: 700; }
         .brand-mark { display: grid; width: 31px; height: 31px; place-items: center; background: var(--green); color: var(--lime); border-radius: 50%; font-size: 13px; }
         .nav { display: flex; align-items: center; gap: 31px; }
-        .nav a { color: var(--muted); text-decoration: none; font-size: 13px; }
-        .nav a:hover, .text-link:hover { color: var(--green); }
-        .nav .nav-contact { padding: 10px 14px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); }
+        .nav a { color: var(--ink); font-family: var(--mono); text-decoration: none; font-size: 12px; font-weight: 500; text-transform: uppercase; }
+        .nav a:hover { color: var(--green); }
+        .nav .nav-contact { padding: 10px 14px; border: 1px solid var(--green); border-radius: 3px; color: #fff; background: var(--green); }
+        .nav .nav-contact:hover { border-color: #123b2f; color: #fff; background: #123b2f; }
 
         .hero {
             position: relative;
@@ -61,23 +77,36 @@
             align-items: center;
             gap: 64px;
             padding: 88px 0 82px;
-            border-bottom: 1px solid var(--line);
+            border-bottom: 1px solid #53e3cd40;
             animation: arrive .65s ease-out both;
         }
-        .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--green); }
+        .hero::before {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 100vw;
+            content: "";
+            transform: translateX(-50%);
+            background-color: #0b2026;
+            background-image: radial-gradient(ellipse at 78% 48%, #167c7070, transparent 43%), linear-gradient(#5be2d010 1px, transparent 1px), linear-gradient(90deg, #5be2d010 1px, transparent 1px), linear-gradient(135deg, transparent 49.8%, #5be2d018 50%, transparent 50.2%);
+            background-size: auto, 32px 32px, 32px 32px, 100% 100%;
+        }
+        .eyebrow { display: flex; align-items: center; gap: 10px; color: #72e8d2; }
         .status-dot { width: 8px; height: 8px; background: #69a76c; border-radius: 50%; box-shadow: 0 0 0 4px #69a76c20; }
-        h1 { max-width: 760px; margin: 22px 0 18px; font-size: clamp(48px, 7vw, 84px); line-height: .98; letter-spacing: 0; font-weight: 600; }
-        h1 span { color: var(--green); }
-        .hero-copy { max-width: 590px; margin: 0; color: #52635b; font-size: 17px; line-height: 1.7; }
+        h1 { max-width: 760px; margin: 22px 0 18px; color: #f1f7f2; font-size: clamp(48px, 7vw, 84px); line-height: .98; letter-spacing: 0; font-weight: 600; }
+        h1 span { color: #72e8d2; }
+        .hero-copy { max-width: 590px; margin: 0; color: #b8c9c6; font-size: 17px; line-height: 1.7; }
         .hero-actions { display: flex; align-items: center; gap: 21px; margin-top: 29px; }
-        .button { display: inline-flex; align-items: center; gap: 12px; padding: 13px 17px; background: var(--green); color: white; text-decoration: none; border-radius: 3px; font-size: 13px; font-weight: 600; }
-        .button:hover { background: #236249; }
-        .text-link { color: var(--ink); font-size: 13px; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+        .button { display: inline-flex; align-items: center; gap: 12px; padding: 13px 17px; background: #72e8d2; color: #0b2026; text-decoration: none; border-radius: 3px; font-size: 13px; font-weight: 600; }
+        .button:hover { background: var(--lime); }
+        .text-link { color: #e3efeb; font-size: 13px; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 4px; }
         .portrait-wrap { position: relative; justify-self: end; width: 190px; height: 220px; }
         .portrait-frame { position: absolute; inset: 0 12px 12px 0; overflow: hidden; background: var(--blue); border: 1px solid #c4d9d5; border-radius: 2px; }
         .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
         .portrait-accent { position: absolute; right: 0; bottom: 0; width: 82px; height: 82px; background: var(--lime); z-index: -1; }
-        .portrait-label { position: absolute; left: -43px; bottom: 24px; padding: 8px 10px; background: var(--paper); border: 1px solid var(--line); transform: rotate(-5deg); }
+        .portrait-label { position: absolute; left: -43px; bottom: 24px; padding: 8px 10px; background: #102c31; border: 1px solid #53e3cd60; color: #c7f8e9; transform: rotate(-5deg); }
 
         .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 58px 0 23px; }
         .section-index { display: block; margin-bottom: 11px; color: var(--muted); }

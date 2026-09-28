@@ -11,6 +11,6 @@
     <div class="portrait-wrap" aria-label="Retrato de Alexandre Taveira">
         <div class="portrait-frame"><img src="https://avatars.githubusercontent.com/u/184930787?v=4" alt="Avatar de Alexandre Taveira" loading="eager"></div>
         <div class="portrait-accent" aria-hidden="true"></div>
-        <span class="portrait-label mono">A construir com intenção</span>
+        <span class="portrait-label mono">Do conceito à produção.</span>
     </div>
 </section>

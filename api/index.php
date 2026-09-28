@@ -312,6 +312,7 @@ $projects = require __DIR__ . '/data/projects.php';
             .footer-links { justify-content: flex-start; gap: 12px 18px; }
         }
     </style>
+    <meta name="google-site-verification" content="2SWnZRtO1xoPNzeQQYMkppPt4_YBaCLZKfVFGZSD8vc" />
 </head>
 <body>
     <?php require __DIR__ . '/sections/header.php'; ?>

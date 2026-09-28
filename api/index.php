@@ -4,7 +4,7 @@ $resource = $_GET['resource'] ?? '';
 if ($resource === 'robots') {
     header('Content-Type: text/plain; charset=utf-8');
     header('Cache-Control: public, max-age=3600, s-maxage=86400');
-    echo "User-agent: *\nAllow: /\nSitemap: https://www.alexandretaveira.pt/sitemap.xml\nAgentmap: https://www.alexandretaveira.pt/.well-known/ard.json\n";
+    echo "User-agent: *\nAllow: /\nSitemap: https://www.alexandretaveira.pt/sitemap.xml\n";
     exit;
 }
 

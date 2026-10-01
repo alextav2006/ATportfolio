@@ -15,11 +15,20 @@ $technologyIcons = [
     </div>
     <div class="project-grid">
         <?php foreach ($projects as $project): ?>
+            <?php $projectDestination = $project['demo'] ?? $project['url'] ?? null; ?>
             <article class="project">
-                <div class="project-art <?= htmlspecialchars($project['style'], ENT_QUOTES, 'UTF-8') ?>" aria-hidden="true">
+                <?php if ($projectDestination !== null): ?>
+                    <a class="project-art project-art-link <?= htmlspecialchars($project['style'], ENT_QUOTES, 'UTF-8') ?>" href="<?= htmlspecialchars($projectDestination, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" aria-label="Visitar <?= htmlspecialchars($project['name'], ENT_QUOTES, 'UTF-8') ?>">
+                <?php else: ?>
+                    <div class="project-art <?= htmlspecialchars($project['style'], ENT_QUOTES, 'UTF-8') ?>" aria-hidden="true">
+                <?php endif; ?>
                     <span class="art-mark"><?= htmlspecialchars($project['number'], ENT_QUOTES, 'UTF-8') ?></span>
                     <span class="art-caption mono">Projeto <?= htmlspecialchars($project['number'], ENT_QUOTES, 'UTF-8') ?></span>
-                </div>
+                <?php if ($projectDestination !== null): ?>
+                    </a>
+                <?php else: ?>
+                    </div>
+                <?php endif; ?>
                 <div class="project-meta mono"><span><?= htmlspecialchars($project['type'], ENT_QUOTES, 'UTF-8') ?></span><span><?= htmlspecialchars($project['number'], ENT_QUOTES, 'UTF-8') ?></span></div>
                 <h3><?= htmlspecialchars($project['name'], ENT_QUOTES, 'UTF-8') ?></h3>
                 <p><?= htmlspecialchars($project['description'], ENT_QUOTES, 'UTF-8') ?></p>

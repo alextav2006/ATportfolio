@@ -235,6 +235,8 @@ $projects = require __DIR__ . '/data/projects.php';
         .project:nth-child(4) { animation-delay: .21s; }
         .project:nth-child(5) { animation-delay: .28s; }
         .project-art { position: relative; display: flex; height: 166px; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 19px; border-radius: 3px; }
+        .project-art-link { color: inherit; cursor: pointer; text-decoration: none; }
+        .project-art-link:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
         .project-art::after { position: absolute; inset: 0; content: ""; opacity: .25; background-image: linear-gradient(135deg, transparent 48%, #14251f 49%, transparent 50%); background-size: 19px 19px; }
         .project-art.chess { background: var(--lime); }
         .project-art.web { background: var(--coral); }
